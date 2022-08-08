@@ -25,9 +25,12 @@ Product.init(
       validate: {
         isDecimal: true,
       },
+    }
       stock: {
         
+
     },
+  },
   {
     sequelize,
     timestamps: false,
