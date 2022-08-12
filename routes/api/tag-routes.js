@@ -42,9 +42,9 @@ router.post("/", async (req, res) => {
 router.put("/:id", (req, res) => {
   // update a tag's name by its `id` value
   try {
-    const categoryData = await Category.update(
+    const tagData = await Tag.update(
       {
-        category_name: req.body.category_name,
+        tag_name: req.body.tag_name,
       },
       {
         where: {
@@ -52,7 +52,7 @@ router.put("/:id", (req, res) => {
         },
       }
     );
-    res.status(200).json(categoryData);
+    res.status(200).json(tagData);
   } catch (err) {
     res.status(400).json(err);
   }
