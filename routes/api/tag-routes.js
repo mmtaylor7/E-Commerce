@@ -60,6 +60,21 @@ router.put("/:id", (req, res) => {
 
 router.delete("/:id", (req, res) => {
   // delete on tag by its `id` value
+  try {
+    const categoryData = await Category.destroy({
+      where: {
+        id: req.params.id,
+      },
+    });
+    if (!categoryData) {
+      res.status(404).json({ message: "Category does not exist" });
+      return;
+    }
+
+    res.status(200).json(categoryData);
+  } catch (err) {
+    res.status(500).json(err);
+  }
 });
 
 module.exports = router;
