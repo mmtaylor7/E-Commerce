@@ -28,8 +28,8 @@ Code refactored by Mary Margaret Taylor
 
 Click the links below for a tutorial on how to use the application:
 
-- [Tutorial Part 1]()
-- [Tutorial Part 2]()
+- [Tutorial Part 1](https://www.loom.com/share/0afe117003c541c2920826168db88593)
+- [Tutorial Part 2](https://www.loom.com/share/b941c894fd0a4c689d9c314ecef33c64)
 
 ## Contributions
 
